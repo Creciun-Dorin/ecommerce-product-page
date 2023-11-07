@@ -1,0 +1,323 @@
+.main-website {
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    // background-color: #69707d85;
+
+    // Setari media 867px
+    @media (max-width: 867px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 490px) {
+        padding: 0;
+        gap: 30px;
+    }
+}
+
+.content-image {
+    width: 445px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+
+    // Setari media 970px
+    @media ((min-width: 867px) and (max-width: 970px)) {
+        width: 345px;
+    }
+
+    @media (max-width: 490px) {
+        max-width: 490px;
+        width: 100%;
+    }
+}
+
+.box-slider {
+    max-width: 445px;
+    max-height: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @media (max-width: 490px) {
+        max-width: 490px;
+        max-height: 490px;
+        border-radius: 0px;
+    }
+
+    .slider_img {
+        display: flex;
+        align-items: center;
+        gap: 150px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        transition: left .5s ease-out;
+        
+        &:hover{
+            opacity: .7;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.button_img {
+    display: none;
+
+    @media (min-width: 490px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            max-width: 88px;
+            max-height: 88px;
+            border-radius: 10px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: border-color .3s ease-in;
+            box-sizing: border-box;
+
+            // Setari media 970px
+            @media ((min-width: 867px) and (max-width: 970px)) {
+                max-width: 68px;
+                max-height: 68px;
+            }
+
+            &:hover,
+            &:focus {
+                opacity: .7;
+                border-color: #FF7E1B;
+            }
+
+            &:active {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+.content-text {
+    max-width: 445px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+
+    // Setari media 970px
+    @media (max-width: 970px) {
+        // width: 345px;
+    }
+
+    @media (max-width: 490px) {
+        padding: 0 24px;
+    }
+
+    .company {
+        color: #FF7E1B;
+        font-family: Kumbh Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        // Setari media
+        @media (max-width: 600px) {
+            font-size: 12px;
+            letter-spacing: 1.846px;
+        }
+    }
+
+    h1 {
+        color: #1D2026;
+        font-family: Kumbh Sans;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        margin: 27px 0 32px 0;
+
+        // Setari media
+        @media (max-width: 600px) {
+            margin: 23px 0 23, 5px 0;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+
+    p {
+        color: #69707D;
+        font-family: Kumbh Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+
+        // Setari media
+        @media (max-width: 600px) {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+
+        @media (max-width: 490px) {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+    }
+
+    .block-price {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 24px 0 32px 0;
+
+        // Setari media
+        @media (max-width: 600px) {
+            margin: 26px 0 24, 5px 0;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .final_price {
+                color: #1D2026;
+                font-family: Kumbh Sans;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .discount {
+                color: #FF7E1B;
+                font-family: Kumbh Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding: 6px 8px;
+                border-radius: 6px;
+                background: #FFEEE2;
+            }
+        }
+
+        .price {
+            color: #B6BCC8;
+            font-family: Kumbh Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            text-decoration: line-through;
+        }
+    }
+
+    .button-grup {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @media (max-width: 490px) {
+            flex-direction: column;
+        }
+
+        .counter-grup {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            border-radius: 10px;
+            background: #F6F8FD;
+
+            @media (max-width: 490px) {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .counter {
+                color: #1D2026;
+                text-align: center;
+                font-family: Kumbh Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            button {
+                padding: 20px 16px;
+                border: none;
+                background-color: transparent;
+            }
+        }
+
+        .add_to_cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex: 1;
+            color: #FFF;
+            font-family: Kumbh Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 19px 0;
+            border: none;
+            border-radius: 10px;
+            background: #FF7E1B;
+            box-shadow: 0px 20px 50px -20px #FF7E1B;
+            transition: background-color .3s ease;
+
+            @media (max-width: 490px) {
+                width: 100%;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #dc8f53;
+            }
+        }
+    }
+}
+
+.move_left,
+.move_right {
+    @media (min-width: 490px) {
+        display: none;
+    }
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    background: transparent;
+    border: none;
+}
+
+.move_left{
+    left: 10px;
+}
+.move_right{
+    right: 10px;
+}

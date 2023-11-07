@@ -1,0 +1,12 @@
+// Import settings
+@import './settings/normalize';
+@import './settings/global-style';
+@import './settings/fonts';
+
+// Import style
+@import './style/header';
+@import './style/main';
+
+// Import modal window
+@import './pop-up/cart-popup';
+@import './pop-up/showBigImage-popup';
