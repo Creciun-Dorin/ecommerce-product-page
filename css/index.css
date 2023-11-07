@@ -394,7 +394,7 @@ button:active {
 
 @font-face {
   font-family: Kumbh Sans;
-  src: url("/lib/font/KumbhSans.ttf");
+  src: url("../lib/font/KumbhSans.ttf");
 }
 .header-website {
   display: flex;
