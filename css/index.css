@@ -400,11 +400,7 @@ button:active {
 
 @font-face {
   font-family: Kumbh Sans;
-<<<<<<< HEAD
-  src: url("../lib/font/KumbhSans.ttf");
-=======
-  src: url("../../lib/font/KumbhSans.ttf");
->>>>>>> 4e1e40a7153324d1197c2f2a5677299c77af24ca
+  src: url("lib/font/KumbhSans.ttf");
 }
 .header-website {
   display: flex;
