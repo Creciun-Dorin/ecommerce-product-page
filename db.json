@@ -4,9 +4,9 @@
     "price": 250,
     "discount": 5,
     "img":[
-        "./lib/img/img-product-1.jpg",
-        "./lib/img/img-product-2.jpg",
-        "./lib/img/img-product-3.jpg",
-        "./lib/img/img-product-4.jpg"
+        "./lib/img/img-product-1.webp",
+        "./lib/img/img-product-2.webp",
+        "./lib/img/img-product-3.webp",
+        "./lib/img/img-product-4.webp"
     ]
 }
