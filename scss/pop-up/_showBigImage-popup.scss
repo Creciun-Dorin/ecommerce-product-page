@@ -47,11 +47,11 @@
 }
 
 .move_left_big {
-    left: 100px;
+    left: -20px;
 }
 
 .move_right_big {
-    right: 100px;
+    right: -20px;
 }
 
 .button-close {
@@ -72,7 +72,7 @@
         height: 4px;
         border-radius: 4px;
         background-color: white;
-        transition: transform .3s ease-in-out;
+        transition: background-color .3s ease-in-out;
 
         &:nth-child(1) {
             transform: translateY(10.5px) rotate(45deg);
@@ -84,4 +84,26 @@
         }
     }
 
+    &:hover{
+        .button-close-item{
+            background-color: #8a4007;
+        }
+    }
+
+}
+
+.control-slider-big-image{
+    position: relative;
+}
+
+.button-cart-modal{
+    path{
+        transition: fill .3s ease-in;
+    }
+
+    &:hover{
+        path{
+            fill: #1D2026;
+        }
+    }
 }

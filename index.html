@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Author: Creciun Dorin. Site theme: Simulation of a part of an online store.">
 	<title>Dorin | Ecommerce product page</title>
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -66,20 +67,20 @@
 		</header>
 		<main class="main-website">
 			<div class="content-image">
-				<button type="button" class="move_left">
+				<button type="button" class="move_left slide-button">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 						<circle cx="20" cy="20" r="20" fill="white" />
 						<path d="M22.8572 14.2857L17.1429 20L22.8572 25.7143" stroke="#1D2026" stroke-width="3" />
 					</svg>
 				</button>
-				<button type="button" class="move_right">
+				<button type="button" class="move_right slide-button">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 						<circle cx="20" cy="20" r="20" fill="white" />
 						<path d="M17.1428 14.2857L22.8571 20L17.1428 25.7143" stroke="#1D2026" stroke-width="3" />
 					</svg>
 				</button>
 				<div class="box-slider">
-					<div class="slider_img"></div>
+					<div class="slider_img" style="left: 0px;"></div>
 				</div>
 				<div class="button_img"></div>
 			</div>
@@ -90,10 +91,10 @@
 					sole, they’ll withstand everything the weather can offer.</p>
 				<div class="block-price">
 					<div class="header-top">
-						<span class="final_price"></span>
-						<span class="discount">50%</span>
+						<span class="final_price">0</span>
+						<span class="discount">0</span>
 					</div>
-					<span class="price">$250.00</span>
+					<span class="price">0</span>
 				</div>
 				<div class="button-grup">
 					<div class="counter-grup">
@@ -146,25 +147,28 @@
 	</div>
 	<!-- ferestre modale -->
 	<div class="showBigImage animate__animated display-none">
-		<button type="button" class="button-close">
-			<span class="button-close-item"></span>
-			<span class="button-close-item"></span>
-		</button>
-		<button type="button" class="move_left_big">
-			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-				<circle cx="20" cy="20" r="20" fill="white" />
-				<path d="M22.8572 14.2857L17.1429 20L22.8572 25.7143" stroke="#1D2026" stroke-width="3" />
-			</svg>
-		</button>
-		<button type="button" class="move_right_big">
-			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-				<circle cx="20" cy="20" r="20" fill="white" />
-				<path d="M17.1428 14.2857L22.8571 20L17.1428 25.7143" stroke="#1D2026" stroke-width="3" />
-			</svg>
-		</button>
-		<div class="box-slider-big">
-			<div class="slider_img_big"></div>
+		<div class="control-slider-big-image">
+			<button type="button" class="button-close">
+				<span class="button-close-item"></span>
+				<span class="button-close-item"></span>
+			</button>
+			<button type="button" class="move_left_big slide-button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+					<circle cx="20" cy="20" r="20" fill="white" />
+					<path d="M22.8572 14.2857L17.1429 20L22.8572 25.7143" stroke="#1D2026" stroke-width="3" />
+				</svg>
+			</button>
+			<button type="button" class="move_right_big slide-button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+					<circle cx="20" cy="20" r="20" fill="white" />
+					<path d="M17.1428 14.2857L22.8571 20L17.1428 25.7143" stroke="#1D2026" stroke-width="3" />
+				</svg>
+			</button>
+			<div class="box-slider-big">
+				<div class="slider_img_big" style="left: 0px;"></div>
+			</div>
 		</div>
+
 	</div>
 	<!-- JavaScript -->
 	<script src="./scripts/button-burgher.js"></script>

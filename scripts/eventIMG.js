@@ -30,6 +30,10 @@ async function showImg() {
 	data.img.forEach((element) => {
 		const newImg = document.createElement('img');
 		newImg.src = element;
+		newImg.alt = 'Pair of "SNEAKER COMPANY" brand sneakers';
+		newImg.width = 455;
+		newImg.height = 455 ;
+
 		const newImgCopy = newImg.cloneNode(true);
 		const newImgCopyBig = newImg.cloneNode(true);
 
@@ -53,11 +57,18 @@ function moveLeftBig() {
 		sliderBig -= 800;
 		slider_img_big.style.left = -sliderBig + 'px'; 
 	}
+	else{
+		sliderBig = 2400;
+		slider_img_big.style.left = -sliderBig + 'px';
+	}
 }
 
 function moveRightBig() {
 	if (sliderBig < 2400) {
 		sliderBig += 800;
+		slider_img_big.style.left = -sliderBig + 'px';
+	}else{
+		sliderBig = 0;
 		slider_img_big.style.left = -sliderBig + 'px';
 	}
 }
@@ -84,11 +95,19 @@ function moveLeft() {
 		sliderMobile -= window.innerWidth + 150;
 		slider_img.style.left = -sliderMobile + 'px'; 
 	}
+	else{
+		sliderMobile = (window.innerWidth + 150) * 3;
+		slider_img.style.left = -sliderMobile + 'px';
+	}
 }
 
 function moveRight() {
 	if (sliderMobile < (window.innerWidth + 150) * 3) {
 		sliderMobile += window.innerWidth + 150;
+		slider_img.style.left = -sliderMobile + 'px';
+	}
+	else{
+		sliderMobile = 0;
 		slider_img.style.left = -sliderMobile + 'px';
 	}
 }

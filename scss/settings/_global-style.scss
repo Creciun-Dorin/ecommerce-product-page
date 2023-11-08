@@ -3,6 +3,18 @@ body {
     height: 100%;
 }
 
+.slide-button{
+    path{
+        transition: stroke .3s ease-in;
+    }
+
+    &:hover{
+        path{
+            stroke: #FF7E1B;
+        }
+    }
+}
+
 body {
     &.active::after {
         content: "";
