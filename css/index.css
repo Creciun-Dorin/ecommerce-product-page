@@ -961,7 +961,7 @@ button:active {
   right: -70px;
   display: flex;
   flex-direction: column;
-  z-index: 20;
+  z-index: 30;
 }
 .box_cart .header-cart {
   padding: 24px;
